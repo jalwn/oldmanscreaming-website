@@ -1,19 +1,24 @@
 package templates
 
-templ header(title string){
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{title}</title>
-    </head>
+templ header(title string) {
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="static/css/style.css"/>
+		<title>{ title }</title>
+	</head>
 }
 
-templ Layout(contents templ.Component, title string){
-    <!DOCTYPE html>
-    <html lang="en">
-    @header(title)
-    <body>
-        @contents
-    </body>
-    </html>
+templ Layout(contents templ.Component, title string) {
+	<!DOCTYPE html>
+	<html lang="en">
+		@header(title)
+		<body>
+			// move navbar to own template    
+			<div class="navbar bg-base-100">
+				<a class="btn btn-ghost text-xl">daisyUI</a>
+			</div>
+			@contents
+		</body>
+	</html>
 }
