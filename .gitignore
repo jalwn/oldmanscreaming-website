@@ -27,3 +27,13 @@ go.work.sum
 # Dependency directories
 node_modules/
 jspm_packages/
+
+# Build folders
+temp/
+tem/
+tmp/
+build/
+.temp/
+.tem/
+.tmp/
+.build/

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"screaming/templates"
+	"screaming/internal/templates"
 )
 
 func main() {
