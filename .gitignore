@@ -37,3 +37,6 @@ build/
 .tem/
 .tmp/
 .build/
+
+# Air
+.air.toml
