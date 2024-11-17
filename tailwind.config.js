@@ -2,8 +2,7 @@
 module.exports = {
   // todo: add html and go file types
   content: [
-    "./templates/**/*.templ",
-    "./templates/*.templ",
+    "./internal/**/*.{go,js,templ,html}"
   ],
   theme: {
     extend: {},

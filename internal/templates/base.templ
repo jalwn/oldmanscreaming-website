@@ -13,12 +13,12 @@ templ Layout(contents templ.Component, title string) {
 	<!DOCTYPE html>
 	<html lang="en">
 		@header(title)
-		<body>
-			// move navbar to own template    
-			<div class="navbar bg-base-100">
-				<a class="btn btn-ghost text-xl">daisyUI</a>
+		<body class="grid justify-items-center">
+			<div class="max-w-[786px]">
+				@navbar()
+				@contents
 			</div>
-			@contents
+			// move navbar to own template    
 		</body>
 	</html>
 }
