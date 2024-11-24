@@ -13,8 +13,8 @@ templ Layout(contents templ.Component, title string) {
 	<!DOCTYPE html>
 	<html lang="en">
 		@header(title)
-		<body class="grid justify-items-center">
-			<div class="max-w-[786px]">
+		<body>
+			<div class="max-w-[786px] my-0 mx-auto">
 				@navbar()
 				@contents
 			</div>
